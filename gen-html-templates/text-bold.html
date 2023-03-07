@@ -1,0 +1,37 @@
+{% extends "_base.html" %}
+{% block title %}Text{% endblock %}
+
+{% block content_name %}
+<b>Text</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+        <div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+        <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+          <div>
+            <!--<h2>Main Style</h2>-->
+            <p>  
+            <b>Alle Menschen werden frei und gleich in Würde und Rechten geboren.</b> Sie sind mit Vernunft und Gewissen ausgestattet und sollten im Geiste der Brüderlichkeit gegeneinander handeln weggelegd. German
+            </p>
+            <p>
+            <b>Všetci ľudia sa rodia slobodní a rovní v dôstojnosti a právach.</b> Sú obdarení rozumom a svedomím a mali by konať voči sebe v duchu bratstva. Slovak
+            „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+            </p>
+            <p>
+            <b>Alle mennesker er født frie og likeverdige og verdige.</b> De er utstyrt med fornuft og samvittighet og bør handle mot hverandre i en brorskapsånd. Norway
+            Tots els éssers humans neixen lliures i iguals en dignitat i drets. Estan dotats de raó i consciència i han ďactuar els uns amb els altres amb esperit de germanor. Catalan
+            </p>
+            <p style ="font-weight: bold">
+            Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. Są obdarzeni rozumem i sumieniem i powinni postępować wobec siebie w duchu braterstwa. PolishPe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă abordare a parcursului în credință al omului Eminescu. Revizuită în câteva rânduri, cartea nu trebuie să lipsească din biblioteca niciunui iubitor de cultură. Romanian
+            </p>
+            Avion Award ¡tomato fear! ovoide tamesis ¿vamos? ócreo ťź  
+            “Another tye” «Another Type»
+            1234567890%
+            email@mywebsite.com
+            </p>
+          </div>
+        </span>
+      </div>
+    {% endfor %}
+{% endblock %}

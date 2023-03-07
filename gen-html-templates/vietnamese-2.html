@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% block title %}Vietnamese{% endblock %}
+
+{% block content_name %}
+<b>Vietnamese preview</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+	<div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+	    <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+            <h2>Sample Text:</h2>
+            <p>
+                Ba ca mắc mới là từ BN2473- BN2475, được cách ly ngay sau khi nhập cảnh.
+                BN2473 tại Bình Dương, là chuyên gia, quốc tịch Trung Quốc, từ Trung Quốc nhập cảnh Sân bay Tân Sơn Nhất ngày 28/2 và được cách ly ngay sau khi nhập cảnh. Kết quả xét nghiệm lần 1 ngày 1/3 dương tính với virus SARS-CoV-2. Hiện bệnh nhân đang được cách ly, điều trị tại Bệnh viện Đa khoa tỉnh Bình Dương.
+                BN2474- BN2475, là công dân Việt Nam, từ nước ngoài nhập cảnh vào Hà Tiên, tỉnh Kiên Giang ngày 27/2 và được cách ly ngay sau khi nhập cảnh. Kết quả xét nghiệm lần 1 ngày 1/3 dương tính với virus SARS-CoV-2. Hiện các bệnh nhân đang được cách ly, điều trị tại Trung tâm Y tế TP. Hà Tiên.
+                Tổng số người tiếp xúc gần và nhập cảnh từ vùng dịch đang được theo dõi sức khỏe (cách ly) hiện là 59.081 người, trong đó: Cách ly tập trung tại bệnh viện 540 người, cách ly tập trung tại cơ sở khác 13.424 người, cách ly tại nhà, nơi lưu trú 45.117 người.
+            </p>
+            <h2>Sample Text Upercase</h2>
+            <p>
+                BA CA MẮC MỚI LÀ TỪ BN2473- BN2475, ĐƯỢC CÁCH LY NGAY SAU KHI NHẬP CẢNH.
+                BN2473 TẠI BÌNH DƯƠNG, LÀ CHUYÊN GIA, QUỐC TỊCH TRUNG QUỐC, TỪ TRUNG QUỐC NHẬP CẢNH SÂN BAY TÂN SƠN NHẤT NGÀY 28/2 VÀ ĐƯỢC CÁCH LY NGAY SAU KHI NHẬP CẢNH. KẾT QUẢ XÉT NGHIỆM LẦN 1 NGÀY 1/3 DƯƠNG TÍNH VỚI VIRUS SARS-COV-2. HIỆN BỆNH NHÂN ĐANG ĐƯỢC CÁCH LY, ĐIỀU TRỊ TẠI BỆNH VIỆN ĐA KHOA TỈNH BÌNH DƯƠNG.
+                BN2474- BN2475, LÀ CÔNG DÂN VIỆT NAM, TỪ NƯỚC NGOÀI NHẬP CẢNH VÀO HÀ TIÊN, TỈNH KIÊN GIANG NGÀY 27/2 VÀ ĐƯỢC CÁCH LY NGAY SAU KHI NHẬP CẢNH. KẾT QUẢ XÉT NGHIỆM LẦN 1 NGÀY 1/3 DƯƠNG TÍNH VỚI VIRUS SARS-COV-2. HIỆN CÁC BỆNH NHÂN ĐANG ĐƯỢC CÁCH LY, ĐIỀU TRỊ TẠI TRUNG TÂM Y TẾ TP. HÀ TIÊN.
+                TỔNG SỐ NGƯỜI TIẾP XÚC GẦN VÀ NHẬP CẢNH TỪ VÙNG DỊCH ĐANG ĐƯỢC THEO DÕI SỨC KHỎE (CÁCH LY) HIỆN LÀ 59.081 NGƯỜI, TRONG ĐÓ: CÁCH LY TẬP TRUNG TẠI BỆNH VIỆN 540 NGƯỜI, CÁCH LY TẬP TRUNG TẠI CƠ SỞ KHÁC 13.424 NGƯỜI, CÁCH LY TẠI NHÀ, NƠI LƯU TRÚ 45.117 NGƯỜI.
+
+            </p>
+        </span>
+       </div>
+    {% endfor %}
+{% endblock %}

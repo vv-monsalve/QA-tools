@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% block title %}Vietnamese{% endblock %}
+
+{% block content_name %}
+<b>VM Test Preview</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+	<div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+	    <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+            <h2>Sample Text:</h2>
+            <p>
+                Trăm năm trong cõi người ta, chữ tài chữ mệnh khéo là ghét nhau. Trải qua một cuộc bể dâu, những điều trông thấy mà đau đớn lòng. Lạ gì bỉ sắc tư phong, trời xanh quen thói má hồng đánh ghen. Cảo thơm lần giở trước đèn, phong Tình có lục còn truyền sử xanh. Ẳ Rằng năm Gia Tĩnh triều Minh, bốn phương phẳng lặng, hai kinh vững vàng. CÓ NHÀ VIÊN NGOẠI HỌ VƯƠNG, GIA TƯ NGHĨ CŨNG THƯỜNG THƯỜNG BỰC TRUNG. MỘT TRAI CON THỨ RỐT LÒNG, VƯƠNG QUAN LÀ CHỮ, NỐI DÒNG NHO GIA. ĐẦU LÒNG HAI Ả TỐ NGA, THÚY KIỀU LÀ CHỊ, EM LÀ THÚY VÂN. MAI CỐT CÁCH, TUYẾT TINH THẦN, MỘT NGƯỜI MỘT VẺ, MƯỜI PHÂN VẸN MƯỜI. „Když si to shrneme, tak výsledkem ročního boje scovidem je, že místo jedný roušky máme nosit dvě.“ Czchec. Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă. Resolution 217 A (III) vom 10.12.1948Da die Anerkennung angeborenen Würde gleichen unveräußerlichen TUÁKAR AÚJMATISAMUJúna pu]ustinrin, thë wã ĩhĩ maõpë,Enaha rẽ popeheĨhĩ TOTIHITAWË Ã owëmayõũ taomi.Considerînd că recunoașterea demnității GENERALĂ.
+            </p>
+    {% endfor %}
+{% endblock %}

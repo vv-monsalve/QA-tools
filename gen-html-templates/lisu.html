@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% block title %}Lisu{% endblock %}
+
+{% block content_name %}
+<b>Lisu</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+	<div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+	    <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+            <h2>Character set</h2>
+            <p>
+                Consonants<br>
+                ꓐ  ꓑ  ꓒ  ꓓ  ꓔ  ꓕ  ꓖ  ꓗ  ꓘ  ꓙ  ꓚ  ꓛ  ꓜ  ꓝ  ꓞ  ꓟ  ꓠ  ꓡ  ꓢ  ꓣ  ꓤ  ꓥ  ꓦ  ꓧ  ꓨ  ꓩ  ꓪ  ꓫ  ꓬ  ꓭ  
+                <br><br>
+                Vowels<br>
+                ꓮ  ꓯ  ꓰ  ꓱ  ꓲ  ꓳ  ꓴ  ꓵ  ꓶ  ꓷ
+                <br><br>
+                Tone indicators<br>
+                ꓸ  ꓹ  ꓺ  ꓻ  ꓼ  ꓽ  ꓾  ꓿
+            </p>
+            <h2>Sample Text:</h2>
+            <p>
+                ꓞꓳ ꓘꓹ ꓠꓯꓹꓼ ꓢꓲ ꓫꓬ ꓟ ꓙ ꓖꓴ ꓗꓪ ꓟꓬꓱꓽ ꓧꓳꓽ ꓢꓴ ꓠꓬ꓾ ꓞꓳ ꓘꓹ ꓗꓪ ꓟ ꓞꓳ ꓟ ꓐꓴ ꓔꓯ ꓮ ꓡꓲ ꓬꓰ ꓠꓯꓹ ꓟ꓾ ꓟꓬꓱꓽ ꓔꓯ ꓧꓳꓽ ꓪꓴꓸ ꓟꓴ ꓢꓴ ꓬꓲ ꓜꓴꓻ ꓤ ꓕꓲ ꓜꓴꓻ ꓢꓲꓺ ꓖꓶ ꓠꓯꓹ ꓡꓳ꓿ 
+            </p>
+        </span>
+       </div>
+    {% endfor %}
+{% endblock %}

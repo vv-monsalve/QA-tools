@@ -1,0 +1,81 @@
+{% extends "_base.html" %}
+{% block title %}Text{% endblock %}
+
+{% block content_name %}
+<b>Text</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+        <div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+        <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+          <div>
+            <h2>Main Style</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div>
+          <div class="ss01-container">
+            <h2>Stylistic Set 1</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div> <!--fin ss01-->
+          <div class="ss02-container">
+            <h2>Stylistic Set 2</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div> <!--fin ss02-->
+          <div class="ss03-container">
+            <h2>Stylistic Set 3</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div> <!--fin ss03-->
+          <div class="ss04-container">
+            <h2>Stylistic Set 4</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div> <!--fin ss04-->
+          <div class="ss05-container">
+            <h2>Stylistic Set 5</h2>
+            <p>abcdefghijklmnñopqrstuvwxyz
+            <br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p>
+              „Když si to shrneme, tak výsledkem ročního boje s covidem je, že místo jedný roušky máme nosit dvě.“ Czchec
+              Wszyscy ludzie rodzą się wolni i równi pod względem godności i praw. 
+              Pe lângă o biografie scrisă cu erudiție, prețuire și dragoste, cartea aduce cea mai profundă
+              Ľentitat assegura que s'ha arxivat la denúncia per robatori amb força contra tres membres del coŀlectiu.
+            </p>
+          </div> <!--fin ss05-->
+        </span>
+      </div>
+    {% endfor %}
+{% endblock %}

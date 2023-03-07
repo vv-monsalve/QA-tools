@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+{% block title %}Balinese{% endblock %}
+
+{% block content_name %}
+<b>Balinese</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in css_font_classes or css_font_classes_before or css_font_classes_after %}
+      <div class="box">
+	<div class="box-title">{{ font_class.selector }} {{ pt_size }}pt</div>
+	    <span class="{{ font_class.selector }}" style="font-size: {{ pt_size }}pt">
+            <h2>Character set</h2>
+            <p>
+                ᬳ ᬦ ᬘ ᬭ ᬓ ᬤ ᬢ ᬲ ᬯ ᬮ ᬫ ᬕ ᬩ ᬗ ᬧ ᬚ ᬬ ᬜ ᬅ ᬆ ᬇ ᬈ ᬋ ᬌ ᬍ ᬎ ᬉ ᬊ ᬏ ᬐ ᬑ ᬒ
+                ᬡ ᬙ ᬔ ᬥ ᬟ ᬠ ᬣ ᬝ ᬞ ᬰ ᬱ ᬖ ᬪ ᬨ ᬛ
+                ◌ᬀ ◌ᬁ ◌ᬂ ◌ᬃ ◌ᬄ ◌᬴ ◌ᬵ ◌ᬶ ◌ᬷ ◌ᬸ ◌ᬹ ◌ᬺ ◌ᬾ ◌ᬿ
+                ᭐ ᭕ ᭑ ᭖ ᭒ ᭗ ᭓ ᭘ ᭔ ᭙ 0 1 2 3 4 5 6 7 8 9
+            </p>
+            <h2>Sample Text:</h2>
+            <p>
+                ᬲᬫᬶᬫᬦᬸᬲᬦᬾᬲᬦᬾᬜ᭄ᬭᬸᬯᬤᬶᬯᬦ᭄ᬢᬄᬫᬭ᭄ᬤᬾᬓᬢᬸᬃᬫᬤᬸᬯᬾᬓᬳᬸᬢ᭄ᬢᬫᬳᬦ᭄ᬮᬦ᭄ᬳᬓ᭄ᬳᬓ᭄ᬲᬦᬾᬧᬢᭂᬄ᭟ᬲᬫᬶᬓᬮᬸᬕ᭄ᬭᬵᬳᬶᬦ᭄ᬧᬧᬶᬦᭂᬄᬮᬦ᭄ᬳᬶᬤᭂᬧ᭄ᬢᬸᬃᬫᬗ᭄ᬤᬦᬾᬧᬟᬫᬲᬯᬶᬢ᭄ᬭᬫᭂᬮᬭᬧᬦ᭄ᬲᭂᬫᬗᬢ᭄ᬧᬓᬸᬮᬯᬭ᭄ᬕᬳᬦ᭄᭞
+            </p>
+            <p>
+                ᬲᬂᬰᬹᬭᬵᬫ᭄ᬭᬶᬳᬬᬚ᭄ᬜᬭᬶᬂᬲᬫᬭᬫᬳ᭄ᬬᬸᬦᬶᬳᬶᬮᬗᬦᬶᬓᬂᬧᬭᬵᬂᬫᬸᬓ᭞ ᬮᬷᬮᬵᬓᭂᬫ᭄ᬩᬗᬸᬭᬲᭂᬓᬭ᭄ᬢᬚᬶᬦᬶᬓᬾᬰᬦᬶᬗᬭᬶᬧᭂᬚᬳᬶᬂᬭᬡᬵᬗ᭄ᬕᬡ᭞ ᬒᬭ᭄ᬡᬵᬦᬶᬂᬭᬢᬸᬫᬵᬢᬶᬯᬷᬚᬦᬶᬭ᭞ᬓᬸᬡ᭄ᬟᬦᬶᬭᬦᬕᬭᬦᬶᬂᬫᬸᬲᬸᬄᬕᭂᬲᭂᬂ᭞ ᬲᬵᬳᬶᬢ᭄ᬬᬵᬳᬸᬢᬶᬢᭂᬡ᭄ᬟᬲᬶᬂᬭᬶᬧᬸᬓᬧᭃᬓᬦᬶᬭᬣᬦᬶᬓᬲᬸᬰ᭄ᬭᬫᬾᬗ᭄ᬕᬮ᭛
+            </p>
+        </span>
+       </div>
+    {% endfor %}
+{% endblock %}
