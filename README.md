@@ -1,6 +1,8 @@
-# QA Kerning test files
+# QA test files
 
-### GF-Kerning folder
+## Kerning
+
+### GF-Kerning 
 
 Sample texts with common or basic Latin kerning cases
 
@@ -8,7 +10,12 @@ Sample texts with common or basic Latin kerning cases
 - Uper Case to lower case 
 - lower case to lower case 
 
+## Text and others
 
-### html templates
+### html templates 
 
-Used previously with `gftools gen-html`
+- Used previously with `gftools gen-html`
+
+### InDesign 
+
+- IndDesign document used to test TSI script fonts
